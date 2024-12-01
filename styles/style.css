@@ -85,6 +85,81 @@ div #arac {
 .box {
     width: 400px;
     border: 2px solid red;
+ /*   padding: 30px; */
+padding-top: 40px;
+padding-left: 40px;
+margin-top: 50px;
+margin-left: 40px;
+margin-bottom: 60px;
+margin: 10px 10px 10px 10px;
 
+}
 
+.div1 {
+width: 200px;
+padding: 20px;
+border: 5px solid blue;
+box-sizing: content-box;
+background-color: lightblue;
+
+}
+
+/* .div2:hover{
+    border-color: red;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 200px;
+
+} */
+
+.div1::after {
+    content: "after özelliği";
+    background-color: chartreuse;
+}
+
+.div1::before {
+    content: "before özelliği";
+color: red;
+}
+
+body {
+    background-color: lightsalmon;
+}
+.frame {
+    display: none;
+    margin-top: 30px;
+    border: 2px solid black;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid red;
+    border-left: 2px dashed red;
+    border-right: 2px dotted blue;
+    border-bottom: 2px solid purple;
+    
+}
+
+.maxWidth {
+    max-width: 400px;
+    border: 2px solid black;
+    /* height: 200px; */
+background-color: red;
+max-height: 80px;
+overflow: scroll;
+
+}
+
+.box123 {
+    width: 70px;
+    height: 100px;
+    background-color: red;
+
+}
+list-item:nth-child(2n) {
+    background-color: orange;
+}
+.list-item:nth-child(2n+1) {
+    background-color: green;
 }
